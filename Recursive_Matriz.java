@@ -7,10 +7,7 @@ package labcord;
 
 import java.util.Random;
 
-/**
- *
- * @author user
- */
+
 public class LabCord {
 int comp1=0;
     public static void main(String[] args) {
@@ -24,6 +21,7 @@ int comp1=0;
                 {16, 4},
                {15, 3}
             };*/
+        / test N/
         int c = 1;
         int N = 100; //2 * r.nextInt((int) Math.random() * 15 + 10);
         System.out.println(+c + ".Número de puntos es " + N);
@@ -58,7 +56,7 @@ int comp1=0;
         System.out.println("N es: " + N);
         System.out.println("tiempo de ejecucion: " + DTime + " nanosegundos ");
     }
-
+    /iterative functiom
     public double ClosestPair(int N, int coords[][]) {
         int i = 0, j = 0, comps = 0, primero, segundo, primero1, segundo1, primero2, segundo2;
         double dl_min = Double.POSITIVE_INFINITY;
@@ -122,7 +120,7 @@ int comp1=0;
         }
         return 0;
     }
-
+    /recursive method
     public String ClosestPairRecursive(int N, int coords[][], int i, int j, int comp) {
         int primero, segundo, primero1, segundo1, primero2, segundo2;
         double dl_min = Double.POSITIVE_INFINITY;
@@ -199,7 +197,7 @@ int comp1=0;
         }
         return "0";
     }
-
+     //Get distance between points.
     public double distance(int coords[][], int i, int j) {
         int x1, y1, x2, y2;
         x1 = coords[i][0];
